@@ -1,0 +1,26 @@
+.seccion_trending {
+    width: 100%;
+    background-color:  #F3F5F8;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 46px 0 82px 0;
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #572EE5;
+        text-align: center;
+        line-height: 30px;
+    }
+    p {
+        margin-top: 7px;
+        width: 333px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        line-height: 23px;
+    }
+}

@@ -1,0 +1,166 @@
+header {
+    display: flex;
+    flex-flow: column;
+    .logo_menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 29px 26px 17.2px 22px;
+        .logo-mobile {
+            width: 53px;
+            height: 49px;
+        }
+        .logo-desktop {
+            display: none;
+        }
+        .img_close {
+            display: none;
+        }
+    }
+    .chkbox{
+        position: absolute;
+        top: 47px;
+        right: 26px;
+        width: 15px;
+        height: 14px;
+        z-index: 1;
+        opacity: 0;
+        &:checked ~ {
+            .logo_menu {
+                .img_hamb {
+                    display: none;
+                }
+                .img_close {
+                    display: block;
+                }
+            }
+            .menu_list {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 95px;
+                width: 100%;
+                height: 100vh; 
+            }            
+        }
+    }
+    .menu_list {
+        display: none;           
+        nav {
+            background: rgba(87,46,229,0.90);
+            width: 100%;                
+            ul{
+                padding-top: 17px;
+                li{
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 11.2px;
+                    list-style: none;
+                    height: 60px;
+                    a {
+                        text-decoration: none;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #FFFFFF;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                    hr {
+                        width: 40px;
+                        height: 1px;
+                        background-color: rgba(255,255,255,0.50);
+                        border: none;
+                    }
+                }            
+            }               
+        }
+        .menu_list-bttn {
+            display: none;
+        }
+    } 
+    @media screen and (min-width: 1024px) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 23px 156px 12.9px 156px;
+        .logo_menu {
+            display: block;
+            padding: 0;
+            .logo-mobile {
+                display: none;
+            }
+            .logo-desktop {
+                display: block;
+                width: 63px;
+                height: 60px;                
+            }
+            .img_hamb {
+                display: none;
+            }
+            .img_close {
+                display: none;
+            }
+        }
+        .chkbox:checked ~ .logo_menu {
+            .img_close {
+                display: none;
+            }
+        }
+        .menu_list {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 53px;
+            nav {
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                width: unset;
+                height: unset;
+                ul {
+                    display: flex;
+                    flex-flow: row nowrap;                    
+                    gap: 42px;
+                    padding-top: 0;
+                    li {
+                        height: 22px;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        &:hover {
+                            border-bottom: 2px solid #5ED7C6;
+                        }
+                        a {
+                            font-size: 13px;
+                            color: #572EE5;
+                            
+                        }
+                        hr {
+                            display: none;
+                        }
+                    }                
+                }            
+            }
+            .menu_list-bttn {
+                display: block;
+                background-color: transparent;
+                border: none;
+                width: 54px;
+                height: 54px;
+                cursor: pointer;
+                .bttn_crear-hover {
+                    display: none;
+                }
+                &:hover {
+                    .bttn_crear {
+                        display: none;
+                    }
+                    .bttn_crear-hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

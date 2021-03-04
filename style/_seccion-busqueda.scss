@@ -1,0 +1,212 @@
+.seccion_busqueda {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 7px 0 45px 0;
+    .titular_busqueda {
+        width: 286px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        color: #572EE5;
+        line-height: 33px;
+        br {
+            display: none;
+        }
+    }
+    .img-buscador_busqueda {
+        padding-top: 31px;
+        display: grid;
+        grid-template-columns:31px 273px 30px;
+        grid-template-rows: 130px 50px;
+        .img-busqueda {
+            display: flex;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+           
+        }
+        .bqdor2 {
+            display: flex;
+            align-items: center;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border: 1px solid #572EE5;
+            border-radius: 27px;
+            input {
+                width: 215px;
+                height: 22px;
+                margin-left: 55px;
+                outline: none;
+                border: 0;
+                &::content {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #6B7989;
+                    text-align: left;
+                }
+            }
+            img {
+                padding-left: 24px;
+            }
+        }
+    }
+    .articulo_resultado-busqueda {
+        padding: 35px 0 78px 0;
+        flex-flow: column;
+        align-items: center;
+        hr {
+            width: 157px;
+            opacity: 0.5;
+            border: 1px solid #9CAFC3;
+        }
+        .titulo_resultado-busqueda {
+            padding: 43px 0 38px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: #572EE5;
+            text-align: center;
+            line-height: 40px;
+        }
+        .gif-box_resultado-busqueda {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 21px;
+            .gif {
+                width: 156px;
+                height: 120px;
+            }
+            .hover_resultado-busqueda {
+                display: none;
+            }
+        }
+
+    }
+    .articulo_busqueda {
+        padding-top: 31px;
+        .articulo_busqueda__titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            color: #572EE5;
+            line-height: 25px;
+        }
+        .articulo_busqueda__parrafo {
+            width: 225px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #572EE5;
+            line-height: 25px;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        padding: 76px 0 95px 0;
+        .titular_busqueda {
+            width: 934px;
+            font-size: 35px;
+            line-height: 50px;
+            br {
+                display: block;
+            }
+        }
+        .img-buscador_busqueda {
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns:76px 399px 76px;
+            grid-template-rows: 190px 50px;     
+            .bqdor2 {
+                input {
+                    width: 210px;
+                    height: 22px;
+                    margin-left: 54px;
+                    outline: none;
+                    border: 0;
+                    &::placeholder {
+                        color: #9CAFC3;
+                    }
+                }
+                img {
+                    padding-left: 247px;
+                }
+            }       
+        }
+        .articulo_resultado-busqueda {
+            padding: 55px 0 79px 0;
+            flex-flow: column;
+            align-items: center;
+            hr {
+                width: 338px;
+                opacity: 0.5;
+                border: 1px solid #9CAFC3;
+            }
+            .titulo_resultado-busqueda {
+                padding: 81.9px 0 59px 0;
+                font-size: 35px;
+                line-height: 30px;
+            }
+            .gif-box_resultado-busqueda {
+                max-width: 1127px;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 29px;
+                .gif_resultado-busqueda {
+                    position: relative;
+                    &:hover {
+                        .hover_resultado-busqueda {
+                            display: block;
+                        }
+                    }               
+                    .gif {
+                        width: 260px;
+                        height: 200px;
+                    }
+                    .hover_resultado-busqueda {                      
+                        width: 260px;
+                        height: 200px;
+                        position: absolute;
+                        top: 0;
+                        opacity: 0.6;
+                        background: #572EE5;
+                        .icons_gifs {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            gap: 10px;
+                        }
+                        .gif-content {
+                            position: absolute;
+                            bottom: 51px;
+                            left: 18px;
+                        }
+                    }
+                }
+            }                
+        }
+        .art-bqda_hidden {
+            display: none;
+        }     
+        .articulo_busqueda {
+            padding-top: 73px;
+            .articulo_busqueda__titulo {
+                font-size: 18px;
+            }
+            .articulo_busqueda__parrafo {
+                width: unset;
+                margin-top: 7px;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}

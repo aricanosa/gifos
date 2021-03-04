@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOs - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="borde"></div>
+    <header>
+        <input type="checkbox" name="chkbox" class="chkbox">
+        <div class="logo_menu">
+            <a class="logo-mobile" href="index.html"><img src="assets/logo-mobile.svg" alt=""></a>
+            <a class="logo-desktop" href="index.html"><img src="assets/logo-desktop.svg" alt=""></a>
+            <img class="img_hamb" src="assets/burger.svg" alt="">
+            <img class="img_close" src="assets/close.svg" alt="">
+        </div>
+        <div class="menu_list">
+            <nav>
+                <ul>
+                    <li><a href="">Modo Nocturno</a>
+                        <hr>
+                    </li>
+                    <li><a href="favoritos.html">Favoritos</a>
+                        <hr>
+                    </li>
+                    <li><a href="mis_gifos.html">Mis GIFOS</a>
+                        <hr>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu_list-bttn">
+                <a href="crear_gifo.html">
+                    <img class="bttn_crear" src="assets/button-crear-gifo.svg" alt="">
+                    <img class="bttn_crear-hover" src="assets/CTA-crear-gifo-hover.svg" alt="">
+                </a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="seccion_busqueda">
+            <h1 class="titular_busqueda">Inspírate, busca, guarda, y crea <br> los mejores <span>GIFOS</span></h1>
+            <div class="img-buscador_busqueda">
+                <div class="img-busqueda">
+                    <img src="assets/ilustra_header.svg" alt="">
+                </div>
+                <div class="bqdor2">
+                    <input type="search" name="" id="search" placeholder="Busca GIFOS y más">
+                    <img id="searchBtn" src="assets/icon-search.svg" alt="">
+                </div>
+            </div>
+            <article id="articulo_busqueda" class="articulo_busqueda">
+                <p class="articulo_busqueda__titulo">Trending:</p>
+                <p class="articulo_busqueda__parrafo">Reactions, Entertainment, Sports, Stickers, Artists</p>
+            </article>
+            <article id="articulo_resultado-busqueda" class="hidden">
+                <hr>
+                <h1 id="titulo_resultado-busqueda" class="titulo_resultado-busqueda"></h1>
+                <div id="gif-box_resultado-busqueda" class="gif-box_resultado-busqueda">
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif0" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img class="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img class="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img class="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif1" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img class="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img class="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img class="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif2" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img class="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img class="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img class="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif3" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img class="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img class="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img class="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif4" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif5" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif6" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif7" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif8" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif9" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif10" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gif_resultado-busqueda">
+                        <img id="gif11" class="gif" alt="">
+                        <div class="hover_resultado-busqueda">
+                            <div class="icons_gifs">
+                                <img id="icon-fav" src="assets/icons/icon-fav.svg" alt="">
+                                <img id="icon-download" src="assets/icons/icon-download.svg" alt="">
+                                <img id="icon-max" src="assets/icons/icon-max-normal.svg" alt="">
+                            </div>
+                            <div class="gif-content">
+                                <p>User</p>
+                                <p>Título Gif</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="seccion_trending">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos <br> GIFOS de nuestra comunidad.</p>
+            <div class="carrusel">
+
+            </div>
+        </section>
+        <footer>
+            <p class="footer_primer-txt">Compartir en:</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/icon_facebook.svg" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img src="assets/icon-twitter.svg" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/icon_instagram.svg" alt=""></a>
+            </div>
+            <p class="footer_segundo-txt">© GIFOS 2020 All Rights Reserved.</p>
+        </footer>
+    </main>
+    <div class="borde"></div>
+</body>
+<script src="app/app.js"></script>
+
+</html>

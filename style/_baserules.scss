@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    .borde {
+        height: 5px;
+        background-color: #572EE5;
+    }
+    main {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .visible {
+        display: flex;
+    }
+    .hidden {
+        display: none;
+    }
+}
